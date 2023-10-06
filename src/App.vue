@@ -2,7 +2,7 @@
 import NavbarMain from './components/navbar/NavbarMain.vue'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
-import PortfolioView from '@/Views/PortfolioView.vue'
+import PortfolioView from '@/views/PortfolioView.vue'
 import MainTemplate from './templates/MainTemplate.vue'
 </script>
 
