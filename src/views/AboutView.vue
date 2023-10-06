@@ -1,15 +1,15 @@
+<script setup>
+import MainTitle from '../components/general/MainTitle.vue'
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+    <MainTitle title="About me" />
+    <v-container class="container">
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+    </v-container>
+</template>
+<style scoped>
+.container{
+  height: 80vh;
 }
 </style>
+

@@ -1,9 +1,16 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import MainTitle from '../components/general/MainTitle.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <MainTitle title="Isaac Montenegro" />
+  <v-container class="container">
+
+  </v-container>
 </template>
+
+<style scoped>
+.container{
+  height: 80vh;
+}
+</style>
