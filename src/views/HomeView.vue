@@ -4,13 +4,11 @@ import MainTitle from '../components/general/MainTitle.vue'
 
 <template>
   <MainTitle title="Isaac Montenegro" />
-  <v-container class="container">
-
-  </v-container>
+  <v-container class="container"> </v-container>
 </template>
 
 <style scoped>
-.container{
+.container {
   height: 80vh;
 }
 </style>
