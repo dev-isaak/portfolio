@@ -1,8 +1,12 @@
 # TODO's
 
-- Material Design Icons not working
-- Define parts
-- Delete vue router if not needed
+- change Portfolio image
+- change portfolio image position 
+- fix menu bug
+- Add whatsapp link
+- Add projects
+- Add about me text
+- Add jobs
 
 # Portfolio
 

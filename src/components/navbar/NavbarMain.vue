@@ -1,6 +1,9 @@
 <script setup>
 import MenuIcon from '../icons/MenuIcon.vue'
 import { ref } from 'vue'
+import { useDisplay } from 'vuetify'
+
+const { mdAndUp } = useDisplay()
 
 const menuOpened = ref(false)
 
@@ -11,28 +14,25 @@ const handleMenuState = () => {
 </script>
 
 <template>
-  <header class="w-100 position-fixed">
-    <v-layout color="#344E5c">
-      <v-app-bar elevation="0" color="#ef3d59">
-        <v-app-bar-nav-icon @click="handleMenuState">
-          <MenuIcon />
-        </v-app-bar-nav-icon>
-      </v-app-bar>
-      <v-navigation-drawer v-model="menuOpened" location="left" elevation="5" color="#ef3d59">
-        <v-list>
-          <v-tabs direction="vertical">
-            <v-list-item>
-              <v-tab href="#"> HOme </v-tab>
-            </v-list-item>
-            <v-list-item>
-              <v-tab href="#about"> About </v-tab>
-            </v-list-item>
-            <v-list-item>
-              <v-tab href="#portfolio"> Portfolio </v-tab>
-            </v-list-item>
-          </v-tabs>
-        </v-list>
-      </v-navigation-drawer>
-    </v-layout>
-  </header>
+  <v-list v-if="mdAndUp">
+    <v-tabs direction="vertical" color="teal-lighten-3" selected-class="selected-tab">
+      <v-list-item>
+        <v-tab to="/"> Init </v-tab>
+      </v-list-item>
+      <v-list-item>
+        <v-tab :to="{ name: 'about' }"> Experience </v-tab>
+      </v-list-item>
+      <v-list-item>
+        <v-tab :to="{ name: 'portfolio' }"> Portfolio </v-tab>
+      </v-list-item>
+    </v-tabs>
+  </v-list>
 </template>
+
+<style>
+.selected-tab{
+  transition:all 300ms;
+  margin-left:2em;
+  padding-left: 2em;
+}
+</style>

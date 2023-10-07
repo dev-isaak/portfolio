@@ -7,7 +7,8 @@ defineProps({
 </script>
 
 <template>
-  <v-column class="w-100 d-flex justify-center">
-    <h1>{{ title }}</h1>
+  <v-column class="w-100">
+    <h2 class="ml-6">{{ title }}</h2>
+    <v-divider class="mt-2"></v-divider>
   </v-column>
 </template>

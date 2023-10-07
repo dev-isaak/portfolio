@@ -5,27 +5,30 @@ import MainTitle from '../components/general/MainTitle.vue'
 
 <template>
   <MainTitle title="Portfolio" />
-  <v-container class="d-flex flex-wrap justify-center my-10">
+  <v-container class="d-flex flex-column align-center my-10">
     <ProjectCard
       to="#"
       class="mx-4"
       title="Project 1"
       subtitle="something here"
-      image="https://picsum.photos/200/300"
+      image="https://picsum.photos/400/300"
+      variant="text"
     />
     <ProjectCard
       to="#"
       class="mx-4"
       title="Project 2"
       subtitle="something here"
-      image="https://picsum.photos/200/301"
+      image="https://picsum.photos/400/301"
+      variant="text"
     />
     <ProjectCard
       to="#"
       class="mx-4"
       title="Project 3"
       subtitle="something here"
-      image="https://picsum.photos/200/302"
+      image="https://picsum.photos/400/302"
+      variant="text"
     />
   </v-container>
 </template>
