@@ -35,7 +35,7 @@ const handleDialogState = (state) => {
     to="https://time-keeper-dev-isaak.netlify.app/"
     class="mx-4"
     title="Time Keeper"
-    subtitle="something here"
+    subtitle="Web app to control your working hours."
     :image="dailyHoursImage"
     variant="text"
     :chipList="usedTechnologies"

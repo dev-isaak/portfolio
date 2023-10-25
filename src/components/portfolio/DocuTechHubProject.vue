@@ -41,7 +41,7 @@ const handleDialogState = (state) => {
     to="#"
     class="mx-4"
     title="DocuTechHub"
-    subtitle="something here"
+    subtitle="Web portal for documentation management."
     :image="homeCustomerImage"
     variant=""
     :chipList="usedTechnologies"
