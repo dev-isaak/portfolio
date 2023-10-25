@@ -13,7 +13,7 @@ defineProps({
 </script>
 
 <template>
-  <v-card :width="smAndUp ? 500 : '100%'" class="bg-transparent mb-8 pa-6 rounded-lg card-item">
+  <v-card :width="smAndUp ? 500 : '100%'" class="bg-transparent mb-8 pa-6 rounded-lg card-item" >
     <v-img :src="image" height="150" cover></v-img>
     <v-card-title>{{ title }}</v-card-title>
     <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
@@ -27,6 +27,10 @@ defineProps({
 
 <style scoped>
 .card-item {
-  border: 1px solid rgba(0, 128, 128, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 128, 128,.5);
+  transition: all 300ms;
+}
+.card-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 128, 128,1);
 }
 </style>

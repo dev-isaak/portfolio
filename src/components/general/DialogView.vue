@@ -1,9 +1,9 @@
 <script setup>
-import { onMounted } from 'vue'
-onMounted(() => {
-	console.log(props.imageList)
-})
-const props = defineProps({
+import ArrowLeft from '@/components/icons/ArrowLeft.vue'
+import ArrowRight from '@/components/icons/ArrowRight.vue'
+import CircleIcon from '@/components/icons/CircleIcon.vue'
+
+defineProps({
   title: String,
   text: String,
   url: String,
@@ -30,9 +30,11 @@ const handleEmitState = () => {
         :continuous="false"
         :show-arrows="true"
         hide-delimiter-background
-        delimiter-icon="mdi-square"
         height="auto"
 				class="mt-4"
+        :next-icon="ArrowRight"
+        :prev-icon="ArrowLeft"
+        :delimiter-icon="CircleIcon"
       >
         <v-carousel-item
           v-for="(image, index) in imageList"

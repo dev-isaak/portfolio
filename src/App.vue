@@ -8,6 +8,7 @@ import IntroDescription from '@/components/general/IntroDescription.vue'
 import { RouterView } from 'vue-router'
 import IconsList from '@/components/general/IconsList.vue'
 import TimeLine from '@/components/general/TimeLine.vue'
+import resumeDoc from '/public/cv_isaac_montenegro.pdf'
 </script>
 
 <template>
@@ -25,7 +26,7 @@ import TimeLine from '@/components/general/TimeLine.vue'
         <v-container>
           <TimeLine />
         </v-container>
-        <v-btn variant="outlined" class="ma-10" color="teal" href="../../public/cv_isaac_montenegro.pdf">Download my resume</v-btn>
+        <v-btn variant="outlined" class="ma-10" color="teal" :href="resumeDoc">Download resume</v-btn>
         <PortfolioView />
     </router-view>
     </template>
