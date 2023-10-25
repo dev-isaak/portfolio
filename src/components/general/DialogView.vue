@@ -1,5 +1,9 @@
 <script setup>
-defineProps({
+import { onMounted } from 'vue'
+onMounted(() => {
+	console.log(props.imageList)
+})
+const props = defineProps({
   title: String,
   text: String,
   url: String,

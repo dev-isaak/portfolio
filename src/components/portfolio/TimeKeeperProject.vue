@@ -1,21 +1,25 @@
 <script setup>
 import ProjectCard from '@/components/card/ProjectCard.vue'
 import DialogView from '@/components/general/DialogView.vue'
+import dailyHoursImage from '/public/tk/daily_hours.png'
+import calendarImage from '/public/tk/calendar.png'
+import statisticsImage from '/public/tk/statistics.png'
+import projectsImage from '/public/tk/projects.png'
 import { ref } from 'vue'
 
 const usedTechnologies = ['Vue.js', 'Firebase']
 const imageList = [
     {
-        src: '/public/tk/daily_hours.PNG'
+        src: dailyHoursImage
     },
     {
-        src: '/public/tk/calendar.PNG'
+        src: calendarImage
     },
     {
-        src: '/public/tk/statistics.PNG'
+        src: statisticsImage
     },
     {
-        src: '/public/tk/projects.PNG'
+        src: projectsImage
     },
 ]
 
@@ -32,7 +36,7 @@ const handleDialogState = (state) => {
     class="mx-4"
     title="Time Keeper"
     subtitle="something here"
-    image="/public/tk/daily_hours.PNG"
+    :image="dailyHoursImage"
     variant="text"
     :chipList="usedTechnologies"
     chipColor="teal"

@@ -1,11 +1,11 @@
 <script setup>
 import ProjectCard from '@/components/card/ProjectCard.vue'
 import DialogView from '@/components/general/DialogView.vue'
-import homeCustomer from '/public/dth/home_customer.PNG'
-import homeVolpak from '/public/dth/home_volpak.PNG'
-import dashboardVolpak from '/public/dth/dashboard_volpak.PNG'
-import sparePartsCustomer from '/public/dth/spare_parts_customer.PNG'
-import documentationCustomer from '/public/dth/documentation_customer.PNG'
+import homeCustomerImage from '/public/dth/home_customer.png'
+import homeVolpakImage from '/public/dth/home_volpak.png'
+import dashboardVolpakImage from '/public/dth/dashboard_volpak.png'
+import sparePartsCustomerImage from '/public/dth/spare_parts_customer.png'
+import documentationCustomerImage from '/public/dth/documentation_customer.png'
 
 import { ref } from 'vue'
 
@@ -13,19 +13,19 @@ const usedTechnologies = ['Vue.js', 'Node.js', 'Strapi', 'LiteDB ']
 
 const imageList = [
   {
-    src: homeCustomer
+    src: homeCustomerImage
   },
   {
-    src: homeVolpak
+    src: homeVolpakImage
   },
   {
-    src: dashboardVolpak
+    src: dashboardVolpakImage
   },
   {
-    src: sparePartsCustomer
+    src: sparePartsCustomerImage
   },
   {
-    src: documentationCustomer
+    src: documentationCustomerImage
   }
 ]
 
@@ -42,7 +42,7 @@ const handleDialogState = (state) => {
     class="mx-4"
     title="DocuTechHub"
     subtitle="something here"
-    image="/public/dth/home_customer.PNG"
+    :image="homeCustomerImage"
     variant=""
     :chipList="usedTechnologies"
     chipColor="teal"
