@@ -27,9 +27,12 @@ const handleEmitState = () => {
       <v-divider class="mb-4"></v-divider>
 
       <v-carousel
-        :continuous="false"
-        :show-arrows="true"
+        :continuous="true"
+        :show-arrows="false"
         hide-delimiter-background
+        hide-delimiters
+        cycle
+        interval="3000"
         height="auto"
 				class="mt-4"
         :next-icon="ArrowRight"
@@ -40,6 +43,7 @@ const handleEmitState = () => {
           v-for="(image, index) in imageList"
           :key="index"
           :src="image.src"
+          cover
         ></v-carousel-item>
       </v-carousel>
 
