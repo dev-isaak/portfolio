@@ -1,25 +1,31 @@
 <script setup>
 import ProjectCard from '@/components/card/ProjectCard.vue'
 import DialogView from '@/components/general/DialogView.vue'
+import homeCustomer from '/public/dth/home_customer.PNG'
+import homeVolpak from '/public/dth/home_volpak.PNG'
+import dashboardVolpak from '/public/dth/dashboard_volpak.PNG'
+import sparePartsCustomer from '/public/dth/spare_parts_customer.PNG'
+import documentationCustomer from '/public/dth/documentation_customer.PNG'
+
 import { ref } from 'vue'
 
 const usedTechnologies = ['Vue.js', 'Node.js', 'Strapi', 'LiteDB ']
 
 const imageList = [
   {
-    src: '/public/dth/home_customer.PNG'
+    src: homeCustomer
   },
   {
-    src: '/public/dth/home_volpak.PNG'
+    src: homeVolpak
   },
   {
-    src: '/public/dth/dashboard_volpak.PNG'
+    src: dashboardVolpak
   },
   {
-    src: '/public/dth/spare_parts_customer.PNG'
+    src: sparePartsCustomer
   },
   {
-    src: '/public/dth/documentation_customer.PNG'
+    src: documentationCustomer
   }
 ]
 
