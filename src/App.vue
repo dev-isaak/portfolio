@@ -9,6 +9,7 @@ import { RouterView } from 'vue-router'
 import IconsList from '@/components/general/IconsList.vue'
 import TimeLine from '@/components/general/TimeLine.vue'
 import resumeDoc from '/public/cv_isaac_montenegro.pdf'
+import StacksView from './views/StacksView.vue'
 </script>
 
 <template>
@@ -28,6 +29,7 @@ import resumeDoc from '/public/cv_isaac_montenegro.pdf'
         </v-container>
         <v-btn variant="outlined" class="ma-10" color="teal" :href="resumeDoc">Download resume</v-btn>
         <PortfolioView />
+        <StacksView />
     </router-view>
     </template>
   </MainTemplate>
