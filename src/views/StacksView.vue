@@ -1,6 +1,7 @@
 <script setup>
+import MainTitle from '@/components/general/MainTitle.vue'
 import Css3Logo from '/public/logos/css3.png'
-import DockerLogo from '/public/logos/docker.png'
+import DockerLogo from '/public/logos/docker.svg'
 import Html5Logo from '/public/logos/html5.svg'
 import JsLogo from '/public/logos/js.png'
 import NodeLogo from '/public/logos/nodejs.png'
@@ -10,69 +11,62 @@ import VueJsLogo from '/public/logos/vuejs.png'
 </script>
 
 <template>
-  <h2>Stacks</h2>
+  <MainTitle title="Stacks" />
   <v-divider></v-divider>
-  <v-container class="d-flex flex-wrap justify-space-between">
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="Css3Logo"></v-img>
-      <h3 class="text-logo">CSS 3</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="Html5Logo"></v-img>
-      <h3 class="text-logo">Html 5</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="JsLogo"></v-img>
-      <h3 class="text-logo">JavaScript</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="VueJsLogo"></v-img>
-      <h3 class="text-logo">Vue.js</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="Strapi"></v-img>
-      <h3 class="text-logo">Strapi</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="NodeLogo"></v-img>
-      <h3 class="text-logo">Node.js</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="SqlLogo"></v-img>
-      <h3 class="text-logo">Sql</h3>
-    </div>
-    <div class="logo-stack-container">
-      <v-img class="ma-6 stack-image" width="100" :src="DockerLogo"></v-img>
-      <h3 class="text-logo">Docker</h3>
-    </div>
-  </v-container>
+  <v-sheet class="d-flex flex-wrap justify-center w-100 bg-transparent my-6" >
+    <v-sheet class="w-100 d-flex flex-wrap justify-space-between bg-transparent" max-width="700">
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="Css3Logo"></v-img>
+        <h3 class="text-logo">CSS 3</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="Html5Logo"></v-img>
+        <h3 class="text-logo">Html 5</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="JsLogo"></v-img>
+        <h3 class="text-logo">JavaScript</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="VueJsLogo"></v-img>
+        <h3 class="text-logo">Vue.js</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="Strapi"></v-img>
+        <h3 class="text-logo">Strapi</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="NodeLogo"></v-img>
+        <h3 class="text-logo">Node.js</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="SqlLogo"></v-img>
+        <h3 class="text-logo">Sql</h3>
+      </div>
+      <div class="logo-stack-container">
+        <v-img class="ma-6 stack-image" width="100" :src="DockerLogo"></v-img>
+        <h3 class="text-logo">Docker</h3>
+      </div>
+    </v-sheet>
+  </v-sheet>
 </template>
 
 <style>
 .logo-stack-container{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align:center;
 }
 .stack-image {
   z-index: 10;
+  height:100px;
   filter: brightness(0.5);
-  transition: all 300ms;
+  transition: all 500ms;
 }
-.stack-image:hover{
-  transform: translateY(30px);
+.logo-stack-container:hover .stack-image{
+  filter: brightness(1);
 }
-.stack-image:hover {
-  filter: grayscale(0);
-  filter: drop-shadow(4px 4px 10px rgba(0, 128, 128, 0.5));
-}
-.text-logo{
-  position: absolute;
-  top: 35px;
-  color: white;
-}
-.stack-image:hover .text-logo{
+
+.logo-stack-container:hover .text-logo{
   color:white;
 }
+
 </style>

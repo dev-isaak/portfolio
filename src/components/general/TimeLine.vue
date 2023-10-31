@@ -18,7 +18,7 @@
         <p>Creación de procesos automatizados con Microsoft Power Automate.</p>
       </div>
   </v-timeline-item>
-  <v-timeline-item dot-color="teal" fill-dot size="21" line-inset="10">
+  <v-timeline-item dot-color="teal" fill-dot size="21" line-inset="10" class="text-end">
       <template v-slot:opposite>
         2017 - 2023
       </template>
