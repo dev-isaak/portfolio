@@ -1,5 +1,3 @@
-//import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import router from './router'
@@ -11,7 +9,17 @@ import * as directives from 'vuetify/directives'
 
 const vuetify = createVuetify({
   components,
-  directives
+  directives,
+  theme: {
+    themes: {
+      light: {
+        dark: false,
+        colors: {
+          primary: '#0f172a',
+        }
+      }
+    }
+  },
 })
 
 import App from './App.vue'

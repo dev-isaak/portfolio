@@ -5,7 +5,7 @@ import { useDisplay } from 'vuetify'
 
 const { mdAndUp } = useDisplay()
 
-const menuOpened = ref(false)
+const drawer = ref(false)
 
 const handleMenuState = () => {
   menuOpened.value = !menuOpened.value
@@ -14,25 +14,39 @@ const handleMenuState = () => {
 </script>
 
 <template>
-  <v-list v-if="mdAndUp">
-    <v-tabs direction="vertical" color="teal-lighten-3" selected-class="selected-tab">
-      <v-list-item>
-        <v-tab to="/"> Init </v-tab>
-      </v-list-item>
-      <v-list-item>
-        <v-tab :to="{ name: 'about' }"> Experience </v-tab>
-      </v-list-item>
-      <v-list-item>
-        <v-tab :to="{ name: 'portfolio' }"> Portfolio </v-tab>
-      </v-list-item>
-    </v-tabs>
-  </v-list>
+  <!-- When mobile -->
+  <div v-if="!mdAndUp">
+    <v-app-bar-nav-icon variant="text" @click="drawer = !drawer">
+      <MenuIcon color="white" size="30" />
+    </v-app-bar-nav-icon>
+    <v-navigation-drawer v-model="drawer" location="left" temporary class="bg-primary">
+      <v-list class="mt-6">
+        <v-list-item>
+          <v-btn variant="text" color="white" href="#about"> About me </v-btn>
+        </v-list-item>
+        <v-list-item>
+          <v-btn variant="text" color="white" href="#portfolio"> Portfolio </v-btn>
+        </v-list-item>
+        <v-list-item>
+          <v-btn variant="text" color="white" href="#experience"> Experience </v-btn>
+        </v-list-item>
+        <v-list-item>
+          <v-btn variant="text" color="white" href="#stacks">Stacks</v-btn>
+        </v-list-item>
+        <v-list-item>
+          <v-btn variant="text" color="white" href="#contact"> Contact </v-btn>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+  </div>
+  <!-- When Web -->
+  <div v-else class="bg-transparent pa-4">
+    <v-btn variant="text" color="white" href="#about"> About me </v-btn>
+    <v-btn variant="text" color="white" href="#portfolio"> Portfolio </v-btn>
+    <v-btn variant="text" color="white" href="#experience"> Experience </v-btn>
+    <v-btn variant="text" color="white" href="#stacks">Stacks</v-btn>
+    <v-btn variant="text" color="white" href="#contact"> Contact </v-btn>
+  </div>
 </template>
 
-<style>
-.selected-tab{
-  transition:all 300ms;
-  margin-left:2em;
-  padding-left: 2em;
-}
-</style>
+<style></style>

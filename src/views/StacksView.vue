@@ -8,12 +8,12 @@ import NodeLogo from '/public/logos/nodejs.png'
 import SqlLogo from '/public/logos/sql.png'
 import Strapi from '/public/logos/strapi.webp'
 import VueJsLogo from '/public/logos/vuejs.png'
+import SectionTemplate from '@/templates/SectionTemplate.vue'
 </script>
 
 <template>
-  <MainTitle title="Stacks" />
-  <v-divider></v-divider>
-  <v-sheet class="d-flex flex-wrap justify-center w-100 bg-transparent my-6" >
+  <SectionTemplate title="Stacks">
+  <v-sheet class="d-flex flex-wrap justify-center w-100 bg-transparent" >
     <v-sheet class="w-100 d-flex flex-wrap justify-space-between bg-transparent" max-width="700">
       <div class="logo-stack-container">
         <v-img class="ma-6 stack-image" width="100" :src="Css3Logo"></v-img>
@@ -49,6 +49,7 @@ import VueJsLogo from '/public/logos/vuejs.png'
       </div>
     </v-sheet>
   </v-sheet>
+</SectionTemplate>
 </template>
 
 <style>

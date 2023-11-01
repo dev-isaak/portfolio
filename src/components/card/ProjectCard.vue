@@ -13,12 +13,12 @@ defineProps({
 </script>
 
 <template>
-  <v-card :width="smAndUp ? 500 : '100%'" class="bg-transparent mb-8 pa-6 rounded-lg card-item" >
+  <v-card :width="smAndUp ? 400 : '100%'" class="mb-8 pa-6 rounded-lg card-item" >
     <v-img :src="image" height="150" cover></v-img>
-    <v-card-title>{{ title }}</v-card-title>
-    <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
-    <v-card-actions>
-      <div v-for="(chip, index) in chipList" :key="index">
+    <v-card-title class="my-2">{{ title }}</v-card-title>
+    <v-card-text>{{ subtitle }}</v-card-text>
+    <v-card-actions class="mt-6 d-flex flex-wrap">
+      <div v-for="(chip, index) in chipList" :key="index" class="">
         <v-chip :color="chipColor" class="ma-1">{{ chip }}</v-chip>
       </div>
     </v-card-actions>
@@ -27,10 +27,10 @@ defineProps({
 
 <style scoped>
 .card-item {
-  box-shadow: 0px 0px 10px rgba(0, 128, 128,.5);
+  background: rgba(255,255,255, .02);
   transition: all 300ms;
 }
 .card-item:hover {
-  box-shadow: 0px 0px 15px rgba(0, 128, 128,1);
+  /* box-shadow: 0px 0px 15px rgba(0, 128, 128,1); */
 }
 </style>

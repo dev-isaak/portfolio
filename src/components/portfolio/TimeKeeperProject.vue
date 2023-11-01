@@ -33,9 +33,9 @@ const handleDialogState = (state) => {
 <template>
   <ProjectCard
     to="https://time-keeper-dev-isaak.netlify.app/"
-    class="mx-4"
+    class="mx-4 text-white"
     title="Time Keeper"
-    subtitle="Web app to control your working hours."
+    subtitle="Full stack web app made to clock in and controll your timings."
     :image="dailyHoursImage"
     variant="text"
     :chipList="usedTechnologies"

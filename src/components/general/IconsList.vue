@@ -5,14 +5,14 @@
 </script>
 
 <template>
-  <v-list class="icon-list">
-    <v-btn variant="plain" href="https://github.com/dev-isaak">
+  <v-list class="icon-list bg-transparent">
+    <v-btn variant="text" color="white" href="https://github.com/dev-isaak">
       <GithubIcon />
     </v-btn>
-    <v-btn variant="plain" href="https://www.linkedin.com/in/isaac-montenegro/">
+    <v-btn variant="text" color="white" href="https://www.linkedin.com/in/isaac-montenegro/">
       <LinkedinIcon />
     </v-btn>
-    <v-btn variant="plain">
+    <v-btn variant="text" color="white">
       <a href="https://api.whatsapp.com/send?phone=691264307"><WhatsappIcon /></a>
     </v-btn>
   </v-list>
