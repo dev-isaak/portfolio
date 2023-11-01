@@ -38,6 +38,6 @@ import ScrollTop from '@/components/general/ScrollTop.vue'
     }
   body{
     background-color: #0f172a;
-    color: rgb(148, 163, 184);
+    color: #94a3b8;
   }
 </style>

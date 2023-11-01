@@ -51,13 +51,14 @@ const handleDialogState = (state) => {
   <DialogView
     title="Docu Tech Hub"
     text="
-        DocuTechHub is a platform made for a specific customer. 
-      The customer role can see all the documentation uploaded per project, notifications and add spare parts to the cart.
-      The admin role can admin users, projects, upload documentation, manage the state of each project.. "
+        DocuTechHub is a platform made for a specific customer. "
     :chipList="usedTechnologies"
     chipColor="teal"
     :openDialog="openDialog"
     @dialogStatus="handleDialogState"
     :imageList="imageList"
   />
+
+  <!-- The customer role can see all the documentation uploaded per project, notifications and add spare parts to the cart.
+      The admin role can admin users, projects, upload documentation, manage the state of each project.. "  -->
 </template>

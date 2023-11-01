@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Authoring",
+    "company": "Volpak",
+    "data": "February 2023 - Currently",
+    "text": "Actualmente a cargo del desarrollo de un portal web usando Vue.js y Strapi (Node.js). Desarrollo de proyectos de digitalización del departamento. Creación de procesos automatizados con Microsoft Power Automate."
+  },
+  {
+    "id": 2,
+    "title": "Field servie technician",
+    "company": "Tecnoservei",
+    "data": "2017 - 2023",
+    "text": "Instalación de rayos-X, pesadoras dinámicas, detectores de metales... Mantenimiento de maquinaria, formaciones a cliente, realización de IQ/OQ. Viajando por España y Europa"
+  },
+  {
+    "id": 3,
+    "title": "Field servie technician",
+    "company": "Aranow",
+    "data": "2013 - 2017",
+    "text": "Montaje y ajuste de maquinaria industrial. Mecánico y eléctrico. Servicio post-venta. Viajes a nivel internacional."
+  }
+]

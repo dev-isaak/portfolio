@@ -32,9 +32,9 @@ const handleEmitState = () => {
         hide-delimiter-background
         hide-delimiters
         cycle
-        interval="3000"
+        interval="5000"
+				class="carousel mt-4"
         height="auto"
-				class="mt-4"
         :next-icon="ArrowRight"
         :prev-icon="ArrowLeft"
         :delimiter-icon="CircleIcon"
@@ -43,6 +43,7 @@ const handleEmitState = () => {
           v-for="(image, index) in imageList"
           :key="index"
           :src="image.src"
+          height="200"
           cover
         ></v-carousel-item>
       </v-carousel>
