@@ -2,7 +2,7 @@
 import SectionTemplate from '@/templates/SectionTemplate.vue'
 import { useDisplay } from 'vuetify'
 import { ref } from 'vue'
-// import docuhubImages from '@/data/docuhubImages.json'
+import docuhubImages from '@/data/docuhubImages.json'
 import timeKeeperImages from '@/data/timeKeeperImages.json'
 
 const {smAndDown} = useDisplay()
@@ -10,32 +10,13 @@ const {smAndDown} = useDisplay()
 const usedTechnologiesDocuhub = ['Vue.js', 'Node.js', 'Strapi', 'LiteDB', 'API Rest']
 const usedTechnologiesTimeKeeper = ['Vue.js', 'Firebase DB', 'Firebase Auth', 'Firebase Storage']
 
-const test = [
-  {
-    "id": 1,
-    "source": "/public/dth/dashboard_volpak.png"
-  },
-  {
-    "id": 2,
-    "source": "/public/dth/documentation_volpak.png"
-  },
-  {
-    "id": 3,
-    "source": "/public/dth/home_volpak.png"
-  },
-  {
-    "id": 4,
-    "source": "/public/dth/home_customer.png"
-  }
-]
-
 </script>
 
 <template>
   <SectionTemplate title="Portfolio">
   <v-container class="d-flex flex-column flex-lg-row align-center justify-lg-center pa-0">
     <div class="image-container">
-      <img v-for="image in test" :key="image.id" :src="image.source"  :width="smAndDown ? '250' : '350'" />
+      <img v-for="image in docuhubImages" :key="image.id" :src="image.source"  :width="smAndDown ? '250' : '350'" />
       <div class="text-container">
         <h3 class="text-secondary">Docuhub</h3>
         <p>Full stack web app made to manage documentation by project, from customer and writter side.</p>
