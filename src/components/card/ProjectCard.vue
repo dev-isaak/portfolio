@@ -13,8 +13,8 @@ defineProps({
 </script>
 
 <template>
-  <v-card :width="smAndUp ? 400 : '100%'" class="mb-8 pa-6 rounded-lg card-item" >
-    <v-img :src="image" height="150" cover></v-img>
+  <v-card :width="smAndUp ? 400 : '100%'" class="mb-8  rounded-lg card-item" >
+    <v-img :src="image" height="170"></v-img>
     <v-card-title class="my-2 text-secondary">{{ title }}</v-card-title>
     <v-card-text>{{ subtitle }}</v-card-text>
     <v-card-actions class="mt-6 d-flex flex-wrap">
