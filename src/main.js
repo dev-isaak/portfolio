@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import router from './router'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -25,6 +27,8 @@ const vuetify = createVuetify({
 })
 
 import App from './App.vue'
+
+AOS.init()
 
 const app = createApp(App)
 

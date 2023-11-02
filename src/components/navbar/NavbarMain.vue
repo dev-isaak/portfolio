@@ -7,17 +7,13 @@ const { mdAndUp } = useDisplay()
 
 const drawer = ref(false)
 
-const handleMenuState = () => {
-  menuOpened.value = !menuOpened.value
-  //cerrar menú
-}
 </script>
 
 <template>
   <!-- When mobile -->
   <div v-if="!mdAndUp">
     <v-app-bar-nav-icon variant="text" @click="drawer = !drawer">
-      <MenuIcon color="white" size="30" />
+      <MenuIcon class="ml-4 mt-4" color="white" size="30" />
     </v-app-bar-nav-icon>
     <v-navigation-drawer v-model="drawer" location="left" temporary class="bg-primary">
       <v-list class="mt-6">

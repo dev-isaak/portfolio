@@ -1,10 +1,7 @@
 <script setup>
-import AboutView from '@/views/AboutView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
 import MainTemplate from './templates/MainTemplate.vue'
 import IntroDescription from '@/components/general/IntroDescription.vue'
-import { RouterView } from 'vue-router'
-import resumeDoc from '/public/cv_isaac_montenegro.pdf'
 import StacksView from './views/StacksView.vue'
 import ExperienceView from '@/views/ExperienceView.vue'
 import ContactView from '@/views/ContactView.vue'
@@ -16,18 +13,46 @@ import ScrollTop from '@/components/general/ScrollTop.vue'
     <div id="about">
       <IntroDescription />
     </div>
-        <div id="portfolio">
+      <v-lazy
+        :min-height="400"
+        :options="{'threshold':0.5}"
+        transition="fade-transition"
+        id="portfolio"
+      >
+        <div >
           <PortfolioView/>
         </div>
-        <div id="experience">
+      </v-lazy>
+      <v-lazy
+        :min-height="400"
+        :options="{'threshold':0.5}"
+        transition="fade-transition"
+        id="experience"
+      >
+        <div >
           <ExperienceView />
         </div>
-        <div id="stacks">
+        </v-lazy>
+        <v-lazy
+        :min-height="400"
+        :options="{'threshold':0.5}"
+        transition="fade-transition"
+        id="stacks"
+      >
+        <div >
           <StacksView />
         </div>
-        <div id="contact">
+        </v-lazy>
+        <v-lazy
+        :min-height="400"
+        :options="{'threshold':0.5}"
+        transition="fade-transition"
+        id="contact"
+      >
+        <div >
           <ContactView />
         </div>
+        </v-lazy>
         <ScrollTop />
   </MainTemplate>
 </template>

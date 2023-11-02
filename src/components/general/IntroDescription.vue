@@ -17,9 +17,9 @@ import NavbarMain from '@/components/navbar/NavbarMain.vue';
     <IconsList />
   </div>
   <div class="mb-4">
-    <v-avatar class="avatar" size="200">
-      <PortraitImage class="ma-4" />
-    </v-avatar>
+      <v-avatar class="avatar" size="200">
+        <PortraitImage class="ma-4" />
+      </v-avatar>
   </div>
 </div>
 <v-container class="w-100 my-2 container d-flex flex-column flex-sm-reverse-column align-center">
