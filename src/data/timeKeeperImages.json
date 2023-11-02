@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "source" : "/assets/tk/daily_hours.png"
+    "source" : "/public/tk/daily_hours.png"
   },
   {
     "id": 2,
-    "source" : "/assets/tk/statistics.png"
+    "source" : "/public/tk/statistics.png"
   },
   {
     "id": 3,
-    "source" : "/assets/tk/calendar.png"
+    "source" : "/public/tk/calendar.png"
   },
   {
     "id": 4,
-    "source" : "/assets/tk/settings.png"
+    "source" : "/public/tk/settings.png"
   }
 ]

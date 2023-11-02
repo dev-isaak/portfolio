@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "source": "/assets/dth/dashboard_volpak.png"
+    "source": "/public/dth/dashboard_volpak.png"
   },
   {
     "id": 2,
-    "source": "/assets/dth/documentation_volpak.png"
+    "source": "/public/dth/documentation_volpak.png"
   },
   {
     "id": 3,
-    "source": "/assets/dth/home_volpak.png"
+    "source": "/public/dth/home_volpak.png"
   },
   {
     "id": 4,
-    "source": "/assets/dth/home_customer.png"
+    "source": "/public/dth/home_customer.png"
   }
 ]
