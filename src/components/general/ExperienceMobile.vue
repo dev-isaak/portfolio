@@ -25,7 +25,4 @@
   margin: 1em 0;
   border-radius: 10px;
 }
-p:first-child{
-  margin-bottom:2em;
-}
 </style>
