@@ -22,8 +22,10 @@ import NavbarMain from '@/components/navbar/NavbarMain.vue';
       </v-avatar>
   </div>
 </div>
-<v-container class="w-100 my-2 container d-flex flex-column flex-sm-reverse-column align-center">
-      <p>Hola, soy Isaac y esta es mi historia 👇🏻</p>
+<v-container class="w-100 my-2 text-center">
+  <p>Hello there! <br/>
+  I'm a tech enthusiast who has been passionately coding for more than a year now.<br/>
+  I really enjoy working on both front-end and back-end development, although I'm more experienced in front-end development.</p>
   </v-container>
 </template>
 

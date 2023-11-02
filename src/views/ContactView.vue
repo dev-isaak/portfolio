@@ -1,12 +1,10 @@
 <script setup>
 import SectionTemplate from '@/templates/SectionTemplate.vue'
-
 </script>
 
 
 <template>
   <SectionTemplate title="Contact">
-    <!--
     <v-sheet class="bg-transparent ma-auto pa-6" max-width="500">
         <form name="contact" method="POST" data-netlify="true">
           <v-text-field label="Your Name"></v-text-field>
@@ -17,18 +15,7 @@ import SectionTemplate from '@/templates/SectionTemplate.vue'
            </div> 
         </form>
     </v-sheet>
-  -->
-  <form name="contact" method="POST" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+
   </SectionTemplate>
 
 </template>

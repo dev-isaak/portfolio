@@ -3,7 +3,7 @@ import TimeLine from '@/components/general/TimeLine.vue'
 import SectionTemplate from '@/templates/SectionTemplate.vue'
 import ExperienceMobile from '@/components/general/ExperienceMobile.vue'
 import { useDisplay } from 'vuetify'
-
+import resumeDoc from '/public/cv_isaac_montenegro.pdf'
 const { mdAndUp } = useDisplay()
 
 </script>

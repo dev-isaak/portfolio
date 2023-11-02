@@ -6,13 +6,7 @@ import StacksView from './views/StacksView.vue'
 import ExperienceView from '@/views/ExperienceView.vue'
 import ContactView from '@/views/ContactView.vue'
 import ScrollTop from '@/components/general/ScrollTop.vue'
-
-// window.scroll({
-//   top: 10500, 
-//   left: 0, 
-//   behavior: 'smooth'
-// })
-
+import FooterView from './views/FooterView.vue'
 </script>
 
 <template>
@@ -61,12 +55,13 @@ import ScrollTop from '@/components/general/ScrollTop.vue'
         </div>
         </v-lazy>
         <ScrollTop />
+        <FooterView />
   </MainTemplate>
 </template>
 
 <style>
   html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     }
   body{
     background-color: #0f172a;

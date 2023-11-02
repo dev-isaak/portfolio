@@ -1,5 +1,4 @@
 <script setup>
-import MainTitle from '@/components/general/MainTitle.vue'
 import DocuTechHubProject from '@/components/portfolio/DocuTechHubProject.vue'
 import TimeKeeperProject from '@/components/portfolio/TimeKeeperProject.vue'
 import SectionTemplate from '@/templates/SectionTemplate.vue'
