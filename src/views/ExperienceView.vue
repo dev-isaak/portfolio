@@ -14,7 +14,7 @@ const { mdAndUp } = useDisplay()
   <ExperienceMobile v-if="!mdAndUp"/>
   <TimeLine v-else/>
   <div class="d-flex justify-center my-8">
-    <v-btn variant="outlined" color="teal" :href="resumeDoc">Download resume</v-btn>
+    <v-btn variant="outlined" color="teal" :href="resumeDoc" target="_blank">Resume</v-btn>
   </div>
 </SectionTemplate>
 
