@@ -18,7 +18,7 @@ import SectionTemplate from '@/templates/SectionTemplate.vue'
         </form>
     </v-sheet>
   -->
-  <form name="contact" netlify>
+  <form name="contact" action="./EmailSentView.vue" netlify>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
