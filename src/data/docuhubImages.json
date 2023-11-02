@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "source": "/src/components/assets/img/dth/dashboard_volpak.png"
+    "source": "@/components/assets/img/dth/dashboard_volpak.png"
   },
   {
     "id": 2,
-    "source": "/src/components/assets/img/dth/documentation_volpak.png"
+    "source": "@/components/assets/img/dth/documentation_volpak.png"
   },
   {
     "id": 3,
-    "source": "/src/components/assets/img/dth/home_volpak.png"
+    "source": "@/components/assets/img/dth/home_volpak.png"
   },
   {
     "id": 4,
-    "source": "/src/components/assets/img/dth/home_customer.png"
+    "source": "@/components/assets/img/dth/home_customer.png"
   }
 ]
