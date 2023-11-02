@@ -18,7 +18,7 @@ import SectionTemplate from '@/templates/SectionTemplate.vue'
         </form>
     </v-sheet>
   -->
-  <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+  <form name="contact" method="POST" netlify hidden>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
