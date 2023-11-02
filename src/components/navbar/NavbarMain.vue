@@ -18,7 +18,7 @@ const drawer = ref(false)
     <v-navigation-drawer v-model="drawer" location="left" temporary class="bg-primary">
       <v-list class="mt-6">
         <v-list-item v-for="data in navbarData" :key="data.id">
-          <v-btn variant="text" color="white" :href="data.route">{{ data.name }}</v-btn>
+          <v-btn variant="text" color="white" :href="data.route" @click="drawer = !drawer">{{ data.name }}</v-btn>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>

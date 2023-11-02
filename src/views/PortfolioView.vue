@@ -93,7 +93,7 @@ img:hover{
   transform: translateY(-30px);
   z-index:10;
 }
-@media(min-width: 600px){
+@media(min-width: 960px){
   .image-container{
     width: 600px;
     height: 360px;
