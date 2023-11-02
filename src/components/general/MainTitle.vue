@@ -10,7 +10,7 @@ defineProps({
   <div class="mx-8 d-flex justify-center">
     <div class="d-flex flex-column">
       <div data-aos="fade-left" data-aos-duration="1500" class="line-top bg-teal"></div>
-      <h2 class="text-secondary">{{ title }}</h2>
+      <h2 class="text-white">{{ title }}</h2>
       <div data-aos="fade-right" data-aos-duration="1500" class="line-bottom bg-teal"></div>
     </div>
   </div>

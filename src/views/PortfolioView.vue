@@ -1,8 +1,9 @@
 <script setup>
-// import DocuTechHubProject from '@/components/portfolio/DocuTechHubProject.vue'
-// import TimeKeeperProject from '@/components/portfolio/TimeKeeperProject.vue'
 import SectionTemplate from '@/templates/SectionTemplate.vue'
 import { useDisplay } from 'vuetify'
+import { ref } from 'vue'
+import docuhubImages from '@/data/docuhubImages.json'
+import timeKeeperImages from '@/data/timeKeeperImages.json'
 
 const {smAndDown} = useDisplay()
 
@@ -15,10 +16,7 @@ const usedTechnologiesTimeKeeper = ['Vue.js', 'Firebase DB', 'Firebase Auth', 'F
   <SectionTemplate title="Portfolio">
   <v-container class="d-flex flex-column flex-lg-row align-center justify-lg-center pa-0">
     <div class="image-container">
-      <img src="/public/dth/dashboard_volpak.png" :width="smAndDown ? '250' : '350'"/>
-      <img src="/public/dth/documentation_volpak.png" :width="smAndDown ? '250' : '350'"/>
-      <img src="/public/dth/home_volpak.png" :width="smAndDown ? '250' : '350'"/>
-      <img src="/public/dth/home_customer.png" :width="smAndDown ? '250' : '350'"/>
+      <img v-for="image in docuhubImages" :key="image.id" :src="image.source"  :width="smAndDown ? '250' : '350'" />
       <div class="text-container">
         <h3 class="text-secondary">Docuhub</h3>
         <p>Full stack web app made to manage documentation by project, from customer and writter side.</p>
@@ -26,10 +24,7 @@ const usedTechnologiesTimeKeeper = ['Vue.js', 'Firebase DB', 'Firebase Auth', 'F
       </div>
     </div>
     <div class="image-container">
-      <img src="/public/tk/daily_hours.png" :width="smAndDown ? '250' : '350'"/>
-      <img src="/public/tk/statistics.png" :width="smAndDown ? '250' : '350'"/>
-      <img src="/public/tk/calendar.png" :width="smAndDown ? '250' : '350'"/>
-      <img src="/public/tk/settings.png" :width="smAndDown ? '250' : '350'"/>
+      <img v-for="image in timeKeeperImages" :key="image.id" :src="image.source"  :width="smAndDown ? '250' : '350'" />
       <div class="text-container">
         <h3 class="text-secondary">Time Keeper</h3>
         <p>Full stack web app made to clock in and control your timings. <br/>
@@ -38,8 +33,6 @@ const usedTechnologiesTimeKeeper = ['Vue.js', 'Firebase DB', 'Firebase Auth', 'F
           <v-chip v-for="(tech, index) in usedTechnologiesTimeKeeper" :key="index" color="teal" class="chip mx-1">{{ tech }}</v-chip>
       </div>
     </div>
-    <!-- <DocuTechHubProject />
-    <TimeKeeperProject /> -->
   </v-container>
   </SectionTemplate>
 </template>
@@ -50,11 +43,11 @@ const usedTechnologiesTimeKeeper = ['Vue.js', 'Firebase DB', 'Firebase Auth', 'F
   max-width:100%;
   height: 400px;
   perspective: 1200px;
-  position:relative;
   margin: 4em 1em;
   background: rgba(255,255,255, .02);
-  border-radius: 10px
+  border-radius: 10px;
 }
+
 .text-container{
   position:absolute;
   bottom: 0;
@@ -68,37 +61,52 @@ const usedTechnologiesTimeKeeper = ['Vue.js', 'Firebase DB', 'Firebase Auth', 'F
 }
 .image-container img{
   position:absolute;
-  /* transform: skew(-45deg, 0deg); */
   transform: rotateY(-30deg);
   filter: drop-shadow(4px 4px 10px rgba(35, 35, 35, .7));
   transition: 500ms all;
   border-radius: 5px;
+  cursor: pointer;
+  /* z-index:10; */
 }
 img:nth-child(2){
   left:20px;
-  top: -10px;
+  top: -20px;
   z-index:-1;
 }
 img:nth-child(3){
   left:40px;
-  top: -20px;
+  top: -40px;
   z-index:-2;
 }
 img:nth-child(4){
   left:60px;
-  top: -30px;
+  top: -60px;
   z-index:-3;
 }
 img:hover{
+  position: absolute;
   transform: translateY(-30px);
-  z-index:10;
+  z-index:20;
+  width: 100%;
+  height: 200px;
 }
+img:nth-child(2):hover{
+  transform: translateX(-20px);
+}
+img:nth-child(3):hover{
+  transform: translateX(-40px);
+}
+img:nth-child(4):hover{
+  transform: translateX(-60px);
+}
+
 @media(min-width: 960px){
   .image-container{
+    position:relative;
     width: 600px;
     height: 360px;
   }
-  img:nth-child(2){
+img:nth-child(2){
   left:60px;
   top: -10px;
   z-index:-1;
@@ -114,8 +122,18 @@ img:nth-child(4){
   z-index:-3;
 }
 img:hover{
-  transform: translateY(-30px);
-  z-index:10;
+  height:100%;
+  z-index: 20;
+  transform: translateX(-30px);
+}
+img:nth-child(2):hover{
+  transform: translateX(-40px);
+}
+img:nth-child(3):hover{
+  transform: translateX(-60px);
+}
+img:nth-child(4):hover{
+  transform: translateX(-120px);
 }
 }
 </style>

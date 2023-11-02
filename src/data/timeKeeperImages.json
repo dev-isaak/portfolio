@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "source" : "/public/tk/daily_hours.png"
+  },
+  {
+    "id": 2,
+    "source" : "/public/tk/statistics.png"
+  },
+  {
+    "id": 3,
+    "source" : "/public/tk/calendar.png"
+  },
+  {
+    "id": 4,
+    "source" : "/public/tk/settings.png"
+  }
+]
