@@ -1,7 +1,6 @@
 <script setup>
 import ChevronUp from '@/components/icons/ChevronUp.vue'
-import { onMounted, computed, ref } from 'vue'
-import ScrollTop from '@/components/general/ScrollTop.vue'
+import { onMounted, ref } from 'vue'
 
 const botonToTop = ref(false)
 

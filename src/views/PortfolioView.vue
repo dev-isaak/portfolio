@@ -1,9 +1,8 @@
 <script setup>
 import SectionTemplate from '@/templates/SectionTemplate.vue'
 import { useDisplay } from 'vuetify'
-import { ref } from 'vue'
-import docuhubImages from '@/data/docuhubImages.json'
-import timeKeeperImages from '@/data/timeKeeperImages.json'
+import docuhubImages from '@/utils/docuhubImages.json'
+import timeKeeperImages from '@/utils/timeKeeperImages.json'
 
 const {smAndDown} = useDisplay()
 

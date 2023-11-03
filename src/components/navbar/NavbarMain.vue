@@ -2,7 +2,7 @@
 import MenuIcon from '../icons/MenuIcon.vue'
 import { ref } from 'vue'
 import { useDisplay } from 'vuetify'
-import navbarData from '@/data/navbar.json'
+import navbarData from '@/utils/navbar.json'
 const { mdAndUp } = useDisplay()
 
 const drawer = ref(false)

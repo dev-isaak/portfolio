@@ -1,6 +1,4 @@
 <script setup>
-import ProjectCard from '@/components/card/ProjectCard.vue'
-import DialogView from '@/components/general/DialogView.vue'
 import homeCustomerImage from '/public/dth/home_customer.png'
 import homeVolpakImage from '/public/dth/home_volpak.png'
 import dashboardVolpakImage from '/public/dth/dashboard_volpak.png'

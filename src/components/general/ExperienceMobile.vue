@@ -1,6 +1,6 @@
 <script setup>
   import ExperienceCard from '@/components/card/ExperienceCard.vue'
-  import experience from '@/data/experience.json'
+  import experience from '@/utils/experience.json'
 </script>
 
 <template>
